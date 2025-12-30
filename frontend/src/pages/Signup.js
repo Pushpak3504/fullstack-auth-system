@@ -14,7 +14,7 @@ export default function Signup() {
     }
 
     try {
-      await axios.post("http://192.168.80.20:5000/signup", {
+      await axios.post("${process.env.REACT_APP_API_URL}/signup", {
         username,
         password
       });

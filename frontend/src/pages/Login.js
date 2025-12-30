@@ -9,7 +9,7 @@ export default function Login() {
     const password = document.getElementById("p").value;
 
     try {
-      const res = await axios.post("http://192.168.80.20:5000/login", {
+      const res = await axios.post("${process.env.REACT_APP_API_URL}/login", {
         username,
         password
       });
