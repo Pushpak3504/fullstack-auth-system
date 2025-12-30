@@ -1,0 +1,121 @@
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ---------- PAGE TRANSITION ---------- */
+.fade-in {
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ---------- CENTER CARD ---------- */
+.center-card {
+  width: 340px;
+  margin: 120px auto;
+  background: rgba(255, 255, 255, 0.95);
+  color: #222;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+/* ---------- INPUT ---------- */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ---------- DASHBOARD ---------- */
+.dashboard {
+  padding: 50px;
+}
+
+.dashboard h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+/* ---------- INFO CARD ---------- */
+.info-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+  }
+  to {
+    box-shadow: 0 0 22px rgba(0, 229, 255, 0.6);
+  }
+}
+
+/* ---------- LOGOUT ---------- */
+.logout {
+  background: linear-gradient(135deg, crimson, darkred);
+  max-width: 140px;
+}
+.switch-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.link {
+  color: #2a5298;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
